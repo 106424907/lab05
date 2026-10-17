@@ -1,0 +1,96 @@
+/*
+filename: lab04.css
+author: Student Name
+created: 2026-10-17
+last modified: 2026-10-17
+description: lab04.html
+*/
+
+/* --- Step 3: Heading 1 Style Rule --- */
+h1 {
+    color: purple;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* --- Step 4: Element Selectors & Universal Selector --- */
+* {
+    font-family: Calibri, sans-serif;
+    color: #2F4F4F;
+}
+
+/* Heading 2 elements: RGB value rgb(0,128,128), bold, font size 1.5em */
+h2 {
+    color: rgb(0, 128, 128);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+/* --- Group Selectors --- */
+/* Aside and footer elements italic */
+aside,
+footer {
+    font-style: italic;
+}
+
+/* All heading elements (h1, h2, h3) arial font, or sans-serif if arial is not available */
+h1,
+h2,
+h3 {
+    font-family: Arial, sans-serif;
+}
+
+/* Table element border and group selector for table header/data cells */
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+/* --- ID Selectors --- */
+/* Center align the images heading */
+#images {
+    text-align: center;
+}
+
+/* Change color of the specific heading 3 element to red */
+#heading-title {
+    color: red;
+}
+
+/* --- Class Selectors --- */
+/* Special class styling */
+.special {
+    color: darkorange;
+    font-weight: bold;
+}
+
+/* Right align class for month table headings */
+.right-align {
+    text-align: right;
+}
+
+/* --- Contextual Selectors --- */
+/* Navigation menu hyperlinks styling */
+nav a {
+    text-decoration: none;
+    padding: 0.2em 0.6em;
+    border: 4px solid #ccc;
+}
+
+/* Unordered lists nested within an ordered list have square bullets */
+ol ul {
+    list-style-type: square;
+}
+
+/* --- Pseudo Classes --- */
+/* Make the aside element invisible when moving the mouse over it */
+aside:hover {
+    display: none;
+}
+
+/* Hover effects for navigation menu items */
+nav a:hover {
+    background-color: lightblue;
+    border-color: darkblue;
+}
